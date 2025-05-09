@@ -26,7 +26,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: argocd-svc-fio
+  name: argocd-svc-figo
 spec:
   selector:
     app: argocd-app-figo
