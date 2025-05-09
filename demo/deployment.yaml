@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-app
+  name: argocd-app-figo
 spec:
   selector:
     matchLabels:
-      app: argocd-app
+      app: argocd-app-figo
   template:
     metadata:
       labels:
-        app: argocd-app
+        app: argocd-app-figo
     spec:
       containers:
-      - name: argocd-app
+      - name: argocd-app-giho
         image: utibeabasi6/argocd-code:v1.0.8
         resources:
           limits:
@@ -26,10 +26,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: argocd-svc
+  name: argocd-svc-fio
 spec:
   selector:
-    app: argocd-app
+    app: argocd-app-figo
   ports:
   - port: 80
     targetPort: 5000
