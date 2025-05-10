@@ -13,7 +13,8 @@ spec:
     spec:
       containers:
       - name: argocd-app-giho
-        image: utibeabasi6/argocd-code:v1.0.8
+        #image: utibeabasi6/argocd-code:v1.0.8
+		image: nginxdemos/hello
         resources:
           limits:
             memory: "128Mi"
