@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: argocd-app-giho
-        image: nginxdemos/hello
+        image: nginxdemos/nginx-hello
         resources:
           limits:
             memory: "128Mi"
